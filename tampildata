@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.lightBlue,
+        appBar: AppBar(
+          title: Text('Welcome to My Profile'),
+        ),
+        body: Center(
+          child: Column(
+            children:[
+            Text('Nama   : Lidia Sundari'),
+            Text('Alamat : Kampung Mangkai, Lima Puluh'),
+            Text('Telepon : 0821-6797-1401'),
+            Text('E-mail : lidiasundari22@gmail.com'),
+            Image.network('https://lh3.googleusercontent.com/ogw/ADGmqu_nwfnyIBLsm_BwnsDEOOPDBH-5OE1c6bjQDbUm=s83-c-mo'
+
+            ),
+              ],
+            ),
+        ),
+      ),
+    );
+  }
+}
